@@ -12,6 +12,7 @@ import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
     background = PrimaryBlack,
+    onBackground = PrimaryWhite,
     primary = PrimaryPurple,
     onPrimary = PrimaryWhite,
     secondary = SecondaryGreen,
@@ -21,6 +22,7 @@ private val DarkColorScheme = darkColorScheme(
 
 private val LightColorScheme = lightColorScheme(
     background = PrimaryWhite,
+    onBackground = PrimaryBlack,
     primary = PrimaryPurple,
     onPrimary = PrimaryBlack,
     secondary = SecondaryGreen,
@@ -31,7 +33,6 @@ private val LightColorScheme = lightColorScheme(
 @Composable
 fun OnetapwalletTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {

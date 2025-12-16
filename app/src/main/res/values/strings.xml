@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">onetapwallet</string>
+    <string name="background_image">Фоновое изображение</string>
 </resources>

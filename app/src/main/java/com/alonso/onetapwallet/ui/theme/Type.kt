@@ -26,14 +26,14 @@ val Typography = Typography(
     titleLarge = TextStyle(
         fontFamily = poppinsFamily,
         fontWeight = FontWeight.Medium,
-        fontSize = 14.sp,
+        fontSize = 32.sp,
         lineHeight = 28.sp,
         letterSpacing = 0.sp
     ),
     titleMedium = TextStyle(
         fontFamily = poppinsFamily,
         fontWeight = FontWeight.Normal,
-        fontSize = 14.sp,
+        fontSize = 16.sp,
         lineHeight = 28.sp,
         letterSpacing = 0.sp
     )
