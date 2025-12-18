@@ -10,13 +10,9 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -31,9 +27,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.alonso.onetapwallet.R
 import com.alonso.onetapwallet.ui.theme.OnetapwalletTheme
-import com.alonso.onetapwallet.ui.theme.PrimaryPurple
-import com.alonso.onetapwallet.ui.theme.PrimaryWhite
 import com.alonso.onetapwallet.utils.ColorText
+import com.alonso.onetapwallet.utils.FilledButton
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -109,7 +104,7 @@ fun Greeting(modifier: Modifier = Modifier) {
                 }
             }
             item {
-                FilledButton(onClick = { Log.d("Filled button", "Filled button clicked.") })
+                FilledButton( text = "Начнем",onClick = { Log.d("Filled button", "Filled button clicked.") })
             }
         }
     }
@@ -120,20 +115,5 @@ fun Greeting(modifier: Modifier = Modifier) {
 fun GreetingPreview() {
     OnetapwalletTheme {
         Greeting()
-    }
-}
-
-@Composable
-fun FilledButton(onClick: () -> Unit) {
-    Button(onClick = { onClick() },
-        colors = ButtonDefaults.buttonColors(
-            containerColor = PrimaryPurple,
-            contentColor = PrimaryWhite,
-        ),
-        modifier = Modifier
-            .width(327.dp)
-            .height(52.dp),
-    ) {
-        Text("Начнем")
     }
 }
