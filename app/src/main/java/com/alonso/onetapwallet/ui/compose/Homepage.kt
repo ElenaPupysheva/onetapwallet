@@ -147,7 +147,7 @@ fun HomepageScreen(user: User) {
         }
         Spacer(modifier = Modifier.height(38.dp))
         Text(
-            text = "Кошелёк",
+            text = "Биржа",
             color = MaterialTheme.colorScheme.onBackground,
             style = MaterialTheme.typography.titleLarge,
             maxLines = 1
@@ -155,6 +155,7 @@ fun HomepageScreen(user: User) {
         Spacer(modifier = Modifier.height(16.dp))
         LazyColumn(modifier = Modifier
             .fillMaxWidth()) {
+
 
         }
     }
